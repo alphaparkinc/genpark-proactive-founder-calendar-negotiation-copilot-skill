@@ -1,0 +1,35 @@
+{
+  "name": "genpark-proactive-founder-calendar-negotiation-copilot-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Proactive founder calendar negotiation copilot, double-booking shield & meeting triage optimizer.",
+  "author": "genpark",
+  "category": "productivity",
+  "tags": [
+    "founder-assistant",
+    "calendar-copilot",
+    "meeting-triage",
+    "proactive-scheduling",
+    "ph-august-leaderboard"
+  ],
+  "inputs": {
+    "incoming_invite_email": {
+      "type": "string"
+    },
+    "founder_priority_rules": {
+      "type": "object"
+    }
+  },
+  "outputs": {
+    "scheduling_action": {
+      "type": "string"
+    },
+    "optimal_time_slot": {
+      "type": "string"
+    },
+    "focus_time_protected_hours": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
